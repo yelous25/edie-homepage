@@ -5,16 +5,179 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="/assets/favicon.svg"
+      href="/assets/devchallenges.png"
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Vite App</title>
+    <title>Edie homepage</title>
   </head>
   <body>
-    <div id="app">Quick Vite Project</div>
+    <div id="main-container">
+      <header class="header">
+        <h1 class="main-title title">Edie</h1>
+        <menu
+          type="toolbar"
+          class="menu"
+        >
+          <li class="menu-item">Home</li>
+          <li class="menu-item">Services</li>
+          <li class="menu-item">Our Works</li>
+          <li class="menu-item">Clients</li>
+          <li class="menu-item">Contact</li>
+        </menu>
+      </header>
+
+      <main class="main">
+        <section class="intro">
+          <strong> Unhappy with your website? </strong>
+          <h2 class="h1 title">We create beautiful and fast web services</h2>
+          <figure>
+            <img
+              src="/assets/pictures/heroImage.jpg"
+              alt="hero image"
+            />
+          </figure>
+        </section>
+
+        <section class="contact">
+          <h2 class="h1 title">Story, emotion and purpose</h2>
+          <p>
+            We help transform your ideas into real world applications that will outperform your toughest competition and
+            help you achieve your strategic goals in short period of time.
+          </p>
+
+          <label
+            for="email"
+            class="custom-field"
+          >
+            <span class="label">Want us to contact you?</span>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email-1"
+                placeholder="Email"
+              />
+              <button type="button">Join</button>
+            </div>
+          </label>
+        </section>
+
+        <section class="services">
+          <h2 class="h2">We offer high demand services</h2>
+          <div class="card-group">
+            <div class="card card-design">
+              <span class="card-icon material-symbols-rounded"> edit </span>
+              <h3 class="h3 card-title">UI/UX Design</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+                turpis.
+              </p>
+              <button
+                type="button"
+                class="card-action"
+              >
+                Get started
+              </button>
+            </div>
+            <div class="card card-front">
+              <span class="card-icon material-symbols-rounded"> code </span>
+              <h3 class="h3 card-title">Front End</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+                turpis.
+              </p>
+              <button
+                type="button"
+                class="card-action"
+              >
+                Get started
+              </button>
+            </div>
+            <div class="card card-back">
+              <span class="card-icon material-symbols-rounded"> storage </span>
+              <h3 class="h3 card-title">Back End</h3>
+              <p class="card-text">
+                ß Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id
+                quis turpis.
+              </p>
+              <button
+                type="button"
+                class="card-action"
+              >
+                Get started
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="works">
+          <h2 class="h2">Good design means good business</h2>
+
+          <div class="works-gallery">
+            <figure
+              class="works-gallery-items"
+              id="smarthome"
+            >
+              <img
+                src="/assets/pictures/smarthome.jpg"
+                alt="smart home dashboard"
+              />
+              <figcaption class="details">
+                <em class="work-domain"> Full stack application </em>
+                <strong class="work-name"> Smart home dashboard </strong>
+              </figcaption>
+            </figure>
+
+            <figure
+              class="works-gallery-items"
+              id="booking"
+            >
+              <img
+                src="/assets/pictures/booking.png"
+                alt="Booking systemd"
+              />
+              <figcaption class="details">
+                <em class="work-domain"> Mobile application </em>
+                <strong class="work-name"> Booking system </strong>
+              </figcaption>
+            </figure>
+
+            <figure class="works-gallery-items">
+              <img
+                src="/assets/pictures/onboard.png"
+                alt="Onboard application"
+              />
+              <figcaption class="details">
+                <em class="work-domain"> UX/UI design </em>
+                <strong class="work-name"> Onboard application </strong>
+              </figcaption>
+            </figure>
+
+            <figure
+              class="works-gallery-items"
+              id="juice-product"
+            >
+              <img
+                src="/assets/pictures/juice-product.png"
+                alt="Juice product homepage"
+              />
+              <figcaption class="details">
+                <em class="work-domain"> Front End application </em>
+                <strong class="work-name"> Juice product homepage </strong>
+              </figcaption>
+            </figure>
+            <div class="see-more">
+              <span> see more </span> <span class="material-symbols-rounded"> arrow_right_alt </span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer"></footer>
+    </div>
     <script
       type="module"
       src="/main.js"
