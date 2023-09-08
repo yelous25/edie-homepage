@@ -21,16 +21,16 @@
           type="toolbar"
           class="menu"
         >
-          <li class="menu-item">Home</li>
-          <li class="menu-item">Services</li>
-          <li class="menu-item">Our Works</li>
-          <li class="menu-item">Clients</li>
-          <li class="menu-item">Contact</li>
+          <li class="menu-item"><a href="#home">Home</a></li>
+          <li class="menu-item"><a href="#services">Services</a></li>
+          <li class="menu-item"><a href="#works">Works</a></li>
+          <li class="menu-item"><a href="#clients">Clients</a></li>
+          <li class="menu-item"><a href="#contact">Contact</a></li>
         </menu>
       </header>
 
       <main class="main">
-        <section class="intro">
+        <section id="home" class="home">
           <strong> Unhappy with your website? </strong>
           <h2 class="h1 title">We create beautiful and fast web services</h2>
           <figure>
@@ -41,7 +41,7 @@
           </figure>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
           <h2 class="h1 title">Story, emotion and purpose</h2>
           <p>
             We help transform your ideas into real world applications that will outperform your toughest competition and
@@ -65,8 +65,8 @@
           </label>
         </section>
 
-        <section class="services">
-          <h2 class="h2">We offer high demand services</h2>
+        <section id="services" class="services">
+          <h2 class="h2 title">We offer high demand services</h2>
           <div class="card-group">
             <div class="card card-design">
               <span class="card-icon material-symbols-rounded"> edit </span>
@@ -113,8 +113,8 @@
           </div>
         </section>
 
-        <section class="works">
-          <h2 class="h2">Good design means good business</h2>
+        <section id="works" class="works">
+          <h2 class="h2 title">Good design means good business</h2>
 
           <div class="works-gallery">
             <figure
@@ -174,9 +174,95 @@
             </div>
           </div>
         </section>
+
+        <section id="clients" class="clients">
+          <div class="left">
+            <strong class="meet-team"> Meet the team </strong>
+            <h2 class="h2 title">We are chilled and a laidback team</h2>
+            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="right">
+            <figure>
+              <img
+                src="/assets/pictures/person1.png"
+                alt="smiling man"
+              />
+            </figure>
+            <figure>
+              <img
+                src="/assets/pictures/person2.png"
+                alt="smiling man"
+              />
+            </figure>
+            <figure>
+              <img
+                src="/assets/pictures/person3.png"
+                alt="smiling woman"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section id="citation" class="citation">
+          <cite>
+            “Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented
+            team.”
+          </cite>
+          <div class="card">
+            <figure class="card-picture">
+              <img
+                src="/assets/pictures/person4.png"
+                alt="person4"
+              />
+            </figure>
+            <div class="details">
+              <strong class="author"> Carlos Tran </strong>
+              <em> The Decorate Gatsby </em>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="content">
+          <menu
+            type="toolbar"
+            class="menu"
+          >
+          <li class="menu-item"><a href="#home">Home</a></li>
+          <li class="menu-item"><a href="#services">Services</a></li>
+          <li class="menu-item"><a href="#works">Works</a></li>
+          <li class="menu-item"><a href="#clients">Clients</a></li>
+          <li class="menu-item"><a href="#contact">Contact</a></li>
+          </menu>
+  
+          <div>
+            <h1 class="main-title title">Edie</h1>
+            <div class="social-link">
+              <iconify-icon icon="fa:instagram"></iconify-icon>
+              <iconify-icon icon="fa:linkedin-square"></iconify-icon>
+              <iconify-icon icon="fa:twitter-square"></iconify-icon>
+            </div>
+          </div>
+  
+          <label
+            for="email"
+            class="custom-field"
+          >
+            <span class="label">Want us to contact you?</span>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email-1"
+                placeholder="Email"
+              />
+              <button type="button">Join</button>
+            </div>
+          </label>
+        </div>
+        <small class="created_by">created by <strong>Yelous</strong> - devChallenges.io</small>
+      </footer>
     </div>
     <script
       type="module"
