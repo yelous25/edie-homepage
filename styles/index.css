@@ -25,6 +25,8 @@
 
   --home-contact-section-margin-right: 14rem;
   --section-margin-right: 7rem;
+  --section-width: 69.0625rem;
+  --custom-field-width: 21.875rem;
 }
 
 body {
@@ -80,7 +82,7 @@ a {
 }
 
 .custom-field div {
-  width: 21.875rem;
+  width: var(--custom-field-width);
   height: 3.5625rem;
   display: flex;
   align-items: center;
@@ -152,6 +154,7 @@ a {
 
 .main {
   padding-inline: 3.25rem;
+  min-width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,7 +197,7 @@ section.services,
 section.works,
 section.clients,
 section.citation {
-  width: 69.0625rem;
+  width: var(--section-width);
 }
 
 /**
@@ -203,9 +206,11 @@ section.citation {
 section.contact {
   padding-inline-start: var(--home-contact-section-margin-right);
   margin-block-end: 12.5rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   /* align-self: flex-start; */
+  box-sizing: border-box;
 }
 section.contact .h1,
 section.contact p {
@@ -221,9 +226,8 @@ section.contact p {
  * Section services
 */
 section.services {
-  margin-inline: var(--section-margin-right);
+  /* margin-inline: var(--section-margin-right); */
   margin-block-end: 12.125rem;
-  min-width: fit-content;
   display: flex;
   flex-direction: column;
 }
@@ -249,6 +253,8 @@ section.services .card {
 
   border-radius: 1.5rem;
   box-sizing: border-box;
+
+  background: #000;
 }
 section.services .card .card-icon {
   margin-block-end: 2.19rem;
@@ -303,7 +309,7 @@ section.services .card:hover .card-action {
  * Section works
 */
 section.works {
-  margin-inline: var(--section-margin-right);
+  /* margin-inline: var(--section-margin-right); */
   margin-block-end: 13.72rem;
 }
 section.works .h2 {
@@ -362,7 +368,7 @@ section.works .works-gallery .see-more span {
  * Section clients
 */
 section.clients {
-  margin-inline: var(--section-margin-right);
+  /* margin-inline: var(--section-margin-right); */
   margin-block-end: 12.25rem;
   display: flex;
   justify-content: space-between;
@@ -407,7 +413,7 @@ section.clients .right figure img {
  * Section citation
 */
 section.citation {
-  margin-inline: var(--section-margin-right);
+  /* margin-inline: var(--section-margin-right); */
   margin-block-end: 12.5rem;
   display: flex;
   flex-direction: column;
@@ -456,6 +462,7 @@ section.citation .card .details .author + em {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   box-sizing: border-box;
   color: var(--Gray-6, #f2f2f2);
 
@@ -463,12 +470,12 @@ section.citation .card .details .author + em {
 }
 .footer .content {
   height: 100%;
-  margin-inline: 10.375rem;
+  margin-inline: 10.5rem 8.5rem;
   display: flex;
   justify-content: space-between;
 }
 .footer .menu {
-  width: 5.75rem;
+  min-width: 21rem;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -480,7 +487,7 @@ section.citation .card .details .author + em {
   line-height: 200%;
 }
 .footer .menu + div {
-  width: 12.8125rem;
+  min-width: 28.125rem;
 }
 .footer .menu + div .social-link {
   display: flex;
@@ -489,12 +496,14 @@ section.citation .card .details .author + em {
 .footer .menu + div .social-link :nth-child(n) {
   font-size: 1.5rem;
 }
+.footer .custom-field {
+  min-width: var(--custom-field-width);
+}
 .footer .custom-field .label {
   color: var(--Gray-6, #f2f2f2);
 }
 .footer small.created_by {
   margin-block-end: 1.5rem;
-  align-self: center;
 }
 .footer small.created_by strong{
   text-decoration: underline;
